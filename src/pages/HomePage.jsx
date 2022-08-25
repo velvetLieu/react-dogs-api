@@ -4,8 +4,11 @@ function HomePage() {
     return(
         <div>
             <h1>Home Page</h1>
-            <Link to="/breeds">List of all breeds</Link>
-            <Link to="/breed-image">Select image by breed</Link>
+            <ul>
+                <li><Link to="/breeds">List of all breeds</Link></li>
+                <li><Link to="/breed-image">Select image by breed</Link></li>
+            </ul>
+            
         </div>
         
 
