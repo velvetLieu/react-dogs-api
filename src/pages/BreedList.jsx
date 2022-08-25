@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import CreateBreedList from "../components/CreateBreedList";
 import Nav from "../components/Nav";
 
 function BreedList() {
