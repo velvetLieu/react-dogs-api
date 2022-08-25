@@ -13,11 +13,13 @@ function BreedImages() {
     return(
         <>
             <Nav />
-            <select>
-                {Object.keys(dogData).map((breed) => (
-                    <option>{breed}</option>
-                ))}
-            </select>
+            <div>
+                <select>
+                    {Object.keys(dogData).map((breed) => (
+                        <option>{breed}</option>
+                    ))}
+                </select>
+            </div>
         </>
     );
     

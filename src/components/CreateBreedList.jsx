@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import CreateBreedList from "../components/CreateBreedList";
-import Nav from "../components/Nav";
 
-function BreedList() {
+function CreateBreedList() {
     const [dogData, setDogData] = useState({});
 
     useEffect(function() {
@@ -13,15 +11,12 @@ function BreedList() {
 
     return(
         <>
-            <Nav />
-            <ul>
-                {Object.keys(dogData).map((breed) => (
-                    <li>{breed}</li>
-                ))}
-            </ul>
+            {Object.keys(dogData).map((breed) => (
+                breed
+            ))}
         </>
     );
     
 }
 
-export default BreedList
+export default CreateBreedList
