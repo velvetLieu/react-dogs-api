@@ -35,7 +35,7 @@ function BreedImages() {
             <div>
                 <select onChange={handleSelect}>
                     {Object.keys(dogData).map((breed) => (
-                        <option value={breed}>LOL {breed}</option>
+                        <option value={breed}>{breed}</option>
                     ))}
                 </select>
                 <img src={breedImages.length>0 && breedImages[0]} alt=""/>
